@@ -20,7 +20,7 @@ const data = [
         review: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Corrupti labore voluptatem voluptatum adipisci tenetur"
     },
     {
-        name: "Prince Cane",
+        name: "Princess Cane",
         image: "/person4.jpg",
         review: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Corrupti labore voluptatem voluptatum adipisci tenetur"
     },
@@ -50,7 +50,7 @@ const Testimonial = () => {
                             </div>
                             <div className="flex flex-col gap-4 justify-center items-center">
                                 <p className="text-xl font-semibold">{person.name}</p>
-                                <p className="text-lg text-center">{person.review}</p>
+                                <p className="text-xl text-center">&ldquo;{person.review}&rdquo;</p>
                             </div>
                         </div>
                     ))
