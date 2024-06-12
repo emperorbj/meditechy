@@ -1,5 +1,6 @@
 import Header from "../components/Header"
 import Services from "../components/Services"
+import Testimonial from "../components/Testimonial"
 
 
 const Home = () => {
@@ -7,6 +8,7 @@ const Home = () => {
         <div>
             <Header/>
             <Services/>
+            <Testimonial/>
         </div>
     )
 }

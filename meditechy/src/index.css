@@ -7,3 +7,28 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.slick-slide > div {
+  margin: 0 10px
+}
+
+/* Add this CSS to your global stylesheet or in a CSS module */
+.slick-prev, .slick-next {
+  z-index: 2; /* Ensure arrows are on top of other elements */
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Add background color for better visibility */
+  border-radius: 50%; /* Make them circular */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: white; /* Arrow color */
+  font-size: 20px; /* Increase the size of the arrow */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
+}
