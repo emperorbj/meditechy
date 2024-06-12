@@ -1,9 +1,12 @@
+import Header from "../components/Header"
+import Services from "../components/Services"
 
 
 const Home = () => {
     return (
         <div>
-        Home
+            <Header/>
+            <Services/>
         </div>
     )
 }
