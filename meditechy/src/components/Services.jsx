@@ -1,16 +1,20 @@
 import Telemedicine from '../assets/consultation.png'
 import Information from '../assets/guidlines.png'
 import Community from '../assets/community.png'
+import { Glow, GlowCapture } from '@codaworks/react-glow'
 
 const Services = () => {
     return (
-        <section className='flex flex-col bg-sky-500'>
-            <h1 className='text-4xl font-bold text-center mt-[200px] mb-[50px] text-transparent bg-clip-text bg-gradient-to-r from-green-500 to-sky-600'> OUR CORE MISSION AND VISION</h1>
+        <section className='flex flex-col bg-slate-400'>
+            {/* text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 */}
+            <h1 className='text-4xl font-bold text-center mt-[200px] mb-[50px] text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400'> OUR CORE MISSION AND VISION</h1>
             {/* card container */}
+            <GlowCapture>
             <div className='flex gap-10 px-[30px] h-[500px]'>
                 {/* Each card design ONE*/}
+                <Glow color='blue'>
                 <div 
-                    className='flex flex-col h-[460px] bg-white/40 backdrop-blur-xl  rounded-xl shadow-md'>
+                    className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl glow:text-glow/50 glow:bg-sky-400  rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[10px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
                                 <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Telemedicine} alt="" />
@@ -26,12 +30,15 @@ const Services = () => {
                             praesentium?</p>
                     </div>
                 </div>
+                </Glow>
+                
                 {/* Each card design TWO*/}
+                <Glow color='blue'>
                 <div 
-                    className='flex flex-col h-[460px] bg-white/40 backdrop-blur-xl rounded-xl shadow-md'>
+                    className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl glow:text-glow/50 glow:bg-sky-400 rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[10px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
-                                <img className='h-[100%] w-[100%] text-white rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Information} alt="" />
+                                <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Information} alt="" />
                             </div>
                             <h1 className='text-xl font-bold text-white mt-[20px]'>HEALTH INFORMATION</h1>
                         </div>
@@ -44,9 +51,11 @@ const Services = () => {
                             praesentium?</p>
                     </div>
                 </div>
+                </Glow>
                 {/* Each card design THREE*/}
+                <Glow color='blue'>
                 <div 
-                    className='flex flex-col h-[460px] bg-white/40 backdrop-blur-xl rounded-xl shadow-md'>
+                    className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl glow:text-glow/50 glow:bg-sky-400 rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[10px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
                                 <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Community} alt="" />
@@ -62,7 +71,9 @@ const Services = () => {
                             praesentium?</p>
                     </div>
                 </div>
+                </Glow>
             </div>
+            </GlowCapture>
         </section>
     )
 }
