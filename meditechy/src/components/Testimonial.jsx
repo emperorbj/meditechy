@@ -5,21 +5,25 @@ import "slick-carousel/slick/slick-theme.css";
 
 const data = [
     {
+        id: 1,
         name: "John Cane",
         image: "/person1.jpg",
         review: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Corrupti labore voluptatem voluptatum adipisci tenetur"
     },
     {
+        id: 2,
         name: "Jane Cane",
         image: "/person2.jpg",
         review: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Corrupti labore voluptatem voluptatum adipisci tenetur"
     },
     {
+        id: 3,
         name: "Frank Cane",
         image: "/person3.jpg",
         review: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Corrupti labore voluptatem voluptatum adipisci tenetur"
     },
     {
+        id: 4,
         name: "Princess Cane",
         image: "/person4.jpg",
         review: "Lorem ipsum dolor sit amet consectetur adipisicing elit.Corrupti labore voluptatem voluptatum adipisci tenetur"
@@ -44,7 +48,7 @@ const Testimonial = () => {
             <Slider {...settings}>
                 {
                     data.map((person) =>(
-                        <div key={person.name} className="bg-white h-[450px] rounded-xl text-slate-800">
+                        <div key={person.id} className="bg-white h-[450px] shadow-lg rounded-xl text-slate-800">
                             <div className="h-56 rounded-t-xl bg-sky-500 flex items-center justify-center">
                                 <img src={person.image} className="w-44 h-44 rounded-full object-cover" alt="" />
                             </div>
