@@ -2,8 +2,16 @@ import Telemedicine from '../assets/consultation.png'
 import Information from '../assets/guidlines.png'
 import Community from '../assets/community.png'
 import { Glow, GlowCapture } from '@codaworks/react-glow'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const Services = () => {
+
+    useEffect(() => {
+        AOS.init();
+    },[])
+
     return (
         <section className='flex flex-col bg-slate-400'>
             {/* text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 */}

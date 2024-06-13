@@ -1,8 +1,16 @@
 import Program1 from '../assets/class.jpg'
 import Startup from '../assets/startup.jpg'
 import Conference from '../assets/conference.jpg'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react';
 
 const Programs = () => {
+
+    useEffect(() => {
+        AOS.init();
+    },[])
+
     return (
         <>
         <div className='flex h-[500px] mx-[40px] mt-[80px]'>
