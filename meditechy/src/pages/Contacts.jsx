@@ -1,7 +1,7 @@
 
 import Forms from "../components/Forms"
 import Navbar from "../components/Navbar"
-import call from "../assets/call.webp"
+import call from "../assets/doctorcall.webp"
 
 const Contacts = () => {
     return (
