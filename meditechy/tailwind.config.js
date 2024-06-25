@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 import reactGlow from '@codaworks/react-glow/tailwind';
+import tailwindForms from '@tailwindcss/forms'
 export default {
   content: [
     "./index.html",
@@ -14,7 +15,8 @@ export default {
     },
   },
   plugins: [
-    reactGlow
+    reactGlow,
+    tailwindForms
   ]
 }
 
