@@ -22,7 +22,7 @@ const Services = () => {
             <div className='flex gap-10 px-[30px] h-[500px]'>
                 {/* Each card design ONE*/}
                 <Glow color='blue'>
-                <div data-aos-delay="400"  data-aos-duration="400" data-aos-offset="300"  data-aos='fade-right'
+                <div
                     className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl glow:text-glow/50 glow:bg-sky-400  rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[10px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
@@ -42,7 +42,7 @@ const Services = () => {
                 
                 {/* Each card design TWO*/}
                 <Glow color='green'>
-                <div data-aos-delay="400"  data-aos-duration="400" data-aos-offset="300"  data-aos='zoom-in'
+                <div
                     className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl glow:text-glow/50 glow:bg-green-400 rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[10px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
@@ -62,7 +62,7 @@ const Services = () => {
                 </Glow>
                 {/* Each card design THREE*/}
                 <Glow color='orange'>
-                <div data-aos-delay="400"  data-aos-duration="400" data-aos-offset="300"  data-aos='fade-left'
+                <div
                     className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl glow:text-glow/50 glow:bg-orange-400 rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[10px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
