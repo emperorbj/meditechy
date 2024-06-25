@@ -13,7 +13,7 @@ const Services = () => {
     },[])
 
     return (
-        <section className='flex flex-col bg-slate-50'>
+        <section className='flex flex-col font-myFont bg-slate-50'>
             {/* text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 */}
             <h1 className='text-4xl font-bold text-center mt-[200px] mb-[50px] 
             text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400'> OUR CORE MISSION AND VISION</h1>

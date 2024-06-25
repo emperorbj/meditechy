@@ -8,7 +8,7 @@ import Testimonial from "../components/Testimonial"
 
 const Home = () => {
     return (
-        <div>
+        <div className=" font-myFont">
             <Header/>
             <Services/>
             <Testimonial/>

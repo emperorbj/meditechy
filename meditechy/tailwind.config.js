@@ -6,7 +6,12 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        myFont: ["Poppins", "sans-serif"],
+        fira: ["Fira Code", "monospace"]
+      }
+    },
   },
   plugins: [
     reactGlow

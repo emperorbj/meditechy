@@ -8,7 +8,7 @@ import Sponsors from "../components/Sponsors";
 
 const About = () => {
     return (
-        <div className="bg-slate-50">
+        <div className="bg-slate-50 font-myFont">
             <Navbar />
             {/* about us container */}
             <div className="flex justify-between mx-[70px] mt-[80px] h-[750px]">
