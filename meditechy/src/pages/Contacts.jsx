@@ -10,11 +10,10 @@ const Contacts = () => {
             <div className="flex gap-4 mt-[75px] w-[100%] h-full">
                 <Forms />
                 <div className="flex gap-4 flex-col w-[49%]">
-                    <div className="rounded-[20px] shadow  h-[60%]">
+                    <div className="rounded-[20px] shadow  h-[55%]">
                         <img className="rounded-[20px] shadow  h-[100%] w-[100%] object-cover" src={call} alt="" />
                     </div>
-                    <div className="bg-yellow-500 rounded-[20px] shadow 
-                    flex items-center justify-center h-[20%]">
+                    <div className="flex items-center justify-center bg-blue-500 rounded-[10px] h-[20%]">
                         <div className="">
                             <h2 className="text-2xl font-bold">Follow Us</h2>
                             <ul className="mt-2 flex space-x-4">
