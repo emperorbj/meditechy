@@ -4,6 +4,7 @@ import speaker1 from "../assets/nprofile1.webp"
 import speaker2 from "../assets/nprofile4 (1).jpg"
 import speaker3 from "../assets/nprofile3.webp"
 import PastEvents from "../components/PastEvents"
+import { NavLink } from "react-router-dom"
 
 
 const Events = () => {
@@ -19,9 +20,11 @@ const Events = () => {
                     </div>
                     <div className='absolute top-0 left-0 flex items-center justify-center w-full h-full'>
                         <div className='text-center text-white'>
-                            <h1 className='text-5xl font-bold'>Empowering Medical Technology in Africa</h1>
+                            <h1 className='text-5xl font-bold'>2024 Clinical informatics symposium</h1>
                             <p className='mt-4 text-xl'>Join us in revolutionizing healthcare</p>
+                            <NavLink to="/recent-event">
                             <button className='text-[20px] font-bold mt-[30px] rounded-[10px] py-[14px] px-[60px] hover:bg-gradient-to-r from-green-500 to-sky-500 bg-sky-500 shadow-sky-500 shadow-sm '>Learn more</button>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

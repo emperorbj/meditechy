@@ -49,10 +49,10 @@ const Navbar = () => {
                     <NavLink to="/events" className="text-xl rounded-xl  hover:text-blue-400 font-semibold  h-[50px] text-center border-slate-600 w-[100%]">
                         Events
                     </NavLink>
-                    <NavLink className="text-xl rounded-xl  hover:text-blue-400 font-semibold  h-[50px] text-center border-slate-600 w-[100%]">
+                    <NavLink to="/community" className="text-xl rounded-xl  hover:text-blue-400 font-semibold  h-[50px] text-center border-slate-600 w-[100%]">
                         Community
                     </NavLink>
-                    <NavLink className="text-xl rounded-xl  hover:text-blue-400 font-semibold  h-[50px] text-center border-slate-600 w-[100%]">
+                    <NavLink to="/blogs" className="text-xl rounded-xl  hover:text-blue-400 font-semibold  h-[50px] text-center border-slate-600 w-[100%]">
                         Blogs
                     </NavLink>
                 </div>
