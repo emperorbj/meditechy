@@ -27,6 +27,20 @@ const RecentEvent = () => {
                         <video className="bg-transparent rounded-tl-[50px] rounded-br-[50px] object-cover h-[80%]" src="https://ehr.meditech.com/themes/ehrmeditech/videos/events/mtlive24--people-broken-frame.mp4" loop muted autoPlay alt="" />
                     </div>
                 </div>
+                <div className="flex bg-blue-400 items-center  justify-between font-myFont w-[40%]">
+                    <div className="bg-green-600">
+                        <h1 className="text-xl font-semibold">DATE</h1>
+                        <p>27th April, 2024</p>
+                    </div>
+                    <div className="bg-green-600">
+                        <h1 className="text-xl font-semibold">VENUE</h1>
+                        <p>ICC Hall, University of Ibadan</p>
+                    </div>
+                    <div className="bg-green-600">
+                        <h1 className="text-xl font-semibold">TIME</h1>
+                        <p>10:00AM-12:00PM</p>
+                    </div>
+                </div>
             </div>
         </section>
     )
