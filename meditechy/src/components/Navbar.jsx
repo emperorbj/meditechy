@@ -40,7 +40,7 @@ const Navbar = () => {
                 </NavLink>
                 <div className='text-slate-800 flex items-center gap-4 hover:text-sky-500 w-[110px] 
                     text-center text-xl font-bold rounded-lg py-[12px] px-[10px]'>
-                    <button>
+                    <button onClick={() => setIsOpen(!isOpen)} >
                         Resources
                     </button>
                     <img className='cursor-pointer' srcSet={dropdown} alt="" onClick={() => setIsOpen(!isOpen)} />

@@ -1,10 +1,10 @@
 
 import program1 from '../assets/program1.jpg';
-import program2 from '../assets/program2 (2).jpg'
+import program2 from '../assets/program2 (2).webp'
 import program3 from '../assets/program3 (2).jpg'
-import program4 from '../assets/program4 (2).jpg'
+import program4 from '../assets/program4 (2).webp'
 import program5 from '../assets/program5.jpg'
-import program6 from '../assets/program6.jpg'
+import program6 from '../assets/program6.webp'
 
 
 

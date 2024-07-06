@@ -5,6 +5,7 @@ import speaker2 from "../assets/nprofile4 (1).jpg"
 import speaker3 from "../assets/nprofile3.webp"
 import PastEvents from "../components/PastEvents"
 import { NavLink } from "react-router-dom"
+import Footer from "../components/Footer"
 
 
 const Events = () => {
@@ -63,6 +64,7 @@ const Events = () => {
                 </div>
             </div>
             <PastEvents/>
+            <Footer/>
         </>
     )
 }

@@ -1,7 +1,13 @@
 
 import Forms from "../components/Forms"
 import Navbar from "../components/Navbar"
-import call from "../assets/doctorcall.webp"
+import Lottie from "lottie-react"
+import animation from "../fifth.json"
+
+const style = {
+    height: 600,
+    width: 600,
+}
 
 const Contacts = () => {
     return (
@@ -10,8 +16,9 @@ const Contacts = () => {
             <div className="flex gap-4 mt-[75px] w-[100%] h-full">
                 <Forms />
                 <div className="flex gap-4 flex-col w-[49%]">
-                    <div className="rounded-[20px] shadow  h-[55%]">
-                        <img className="rounded-[20px] shadow  h-[100%] w-[100%] object-cover" src={call} alt="" />
+                    <div className="flex items-center justify-center shadow  h-[55%]">
+                        {/* <img className="rounded-[20px] shadow  h-[100%] w-[100%] object-cover" src={call} alt="" /> */}
+                        <Lottie animationData={animation} style={style} loop={true} />
                     </div>
                     <div className="flex items-center justify-center bg-blue-500 rounded-[10px] h-[20%]">
                         <div className="">
