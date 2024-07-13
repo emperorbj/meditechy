@@ -26,7 +26,7 @@ const Community = () => {
                     We think environmentally. We engage in the arts and sciences in 
                     local higher education and support local businesses. From the blood 
                     drives we hold regularly in our facilities to the financial and technical
-                    support we provide to our "neighbors" 
+                    support we provide to our neighbors
                     in Puerto Rico, MEDITECH strives to be a responsible member of the global community
                     </p>
                     <button className="text-xl text-black px-[40px] border-[2px] border-black hover:border-sky-400 hover:text-sky-400 hover:bg-white py-[10px] rounded-md shadow  bg-sky-400">Join us</button>
