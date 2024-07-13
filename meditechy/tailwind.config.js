@@ -10,7 +10,8 @@ export default {
       fontFamily:{
         myFont: ["Poppins", "sans-serif"],
         fira: ["Fira Code", "monospace"],
-        newFont: ["Playwrite NG Modern", "cursive"]
+        myPoppins: ["Poppins", "sans-serif"],
+        myWorkSans: ["Work Sans", "sans-serif"]
       }
     },
   },

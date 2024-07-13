@@ -2,7 +2,7 @@
 import Forms from "../components/Forms"
 import Navbar from "../components/Navbar"
 import Lottie from "lottie-react"
-import animation from "../fifth.json"
+import animation from "../DoctorsContact.json"
 
 const style = {
     height: 600,

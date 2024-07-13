@@ -1,81 +1,100 @@
 
-import program1 from '../assets/program1.jpg';
-import program2 from '../assets/program2 (2).webp'
-import program3 from '../assets/program3 (2).jpg'
-import program4 from '../assets/program4 (2).webp'
-import program5 from '../assets/program5.jpg'
-import program6 from '../assets/program6.webp'
 
 
 
 
 const PastEvents = () => {
     return (
-        <div className=" font-myFont">
-            <h1 className='text-center text-3xl font-bold mt-40'>HERE ARE OUR PAST EVENTS</h1>
-            <div className="grid grid-cols-3 gap-10 p-10">
-                <div className="bg-white w-[470px] rounded-[8px]">
-                    <div className="h-[530px] rounded-t-[8px]">
-                        <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src={program1} alt="" />
+        <section className="mx-[45px]  bg-slate-100 mb-[30px] rounded-[15px] mt-[65px]  h-[720px]">
+            <div className=" h-[15%] pt-[20px]">
+                <h1 className="font-myWorkSans text-2xl font-bold text-center"> Recent events</h1>
+            </div>
+            <div className=" flex  h-[85%]">
+                {/* big top story right side */}
+                <div className=" h-[100%] w-[50%] pr-5">
+                    {/* image container */}
+                    <div className="h-[57%]">
+                        <img className="h-[100%] ml-[20px] rounded-[4px] w-[100%] object-cover" src="https://ehr.meditech.com/sites/default/files/images/events/meditech-live24--main-image.jpg" alt="" />
                     </div>
-                    <div className="w-[100%] h-[160px] flex flex-col gap-5 items-center justify-center">
-                        <h1 className='font-semibold text-2xl'>Program title</h1>
-                        <p>A brief description</p>
-                        <button className='px-[35px] rounded-md hover:text-white hover:bg-blue-500 bg-blue-400 py-[15px]'>Watch here</button>
-                    </div>
-                </div>
-                <div className=" w-[470px] rounded-t-[8px] rounded-[8px]">
-                    <div className="h-[530px]">
-                        <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src={program2} alt="" />
-                    </div>
-                    <div className="w-[100%] h-[160px] flex flex-col gap-5 items-center justify-center">
-                        <h1 className='font-semibold text-2xl'>Program title</h1>
-                        <p>A brief description</p>
-                        <button className='px-[35px] rounded-md hover:text-white hover:bg-blue-500 bg-blue-400 py-[15px]'>Watch here</button>
-                    </div>
-                </div>
-                <div className=" w-[470px] rounded-[8px]">
-                    <div className="h-[530px]">
-                        <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src={program3} alt="" />
-                    </div>
-                    <div className="w-[100%] h-[160px] flex flex-col gap-5 items-center justify-center">
-                        <h1 className='font-semibold text-2xl'>Program title</h1>
-                        <p>A brief description</p>
-                        <button className='px-[35px] rounded-md hover:text-white hover:bg-blue-500 bg-blue-400 py-[15px]'>Watch here</button>
-                    </div>
-                </div>
-                <div className=" w-[470px] rounded-[8px]">
-                    <div className="h-[530px]">
-                        <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src={program4} alt="" />
-                    </div>
-                    <div className="w-[100%] h-[160px] flex flex-col gap-5 items-center justify-center">
-                        <h1 className='font-semibold text-2xl'>Program title</h1>
-                        <p>A brief description</p>
-                        <button className='px-[35px] rounded-md hover:text-white hover:bg-blue-500 bg-blue-400 py-[15px]'>Watch here</button>
+                    {/* description container */}
+                    <div className="h-[43%] font-myWorkSans pl-[10px] flex flex-col gap-3">
+                        <h1 className="text-center mt-5 font-bold text-2xl">
+                        MEDITECH LIVE 24<br/>
+                        Foxborough, MA
+                        </h1>
+                        <div className="flex gap-5">
+                            <p>7th{" "}July,2024</p>
+                        </div>
+                        <p>
+                        Preparation is in motion for MEDITECH LIVE24! We are planning 
+                        three days of in-person collaboration surrounding Expanse, 
+                        the intelligent EHR platform that supports the patient narrative 
+                        at every step.
+                        </p>
+                        <a className="hover:text-white font-bold" href="https://crossexamined.org/how-to-talk-with-your-teens-about-sex-and-love-from-a-biblical-worldview-interview-with-sean-mcdowell/">
+                            <button className="px-[30px] mb-[20px] rounded-[50px] border border-black hover:bg-white hover:text-sky-500 text-white py-[10px] bg-sky-400">
+                                watch here
+                            </button>
+                        </a>
                     </div>
                 </div>
-                <div className=" w-[470px]  rounded-[8px]">
-                    <div className="h-[530px]">
-                        <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src={program5} alt="" />
+                {/* top stories container */}
+                <div className="w-[50%] font-myWorkSans flex flex-col px-[15px] gap-2 py-[4px]  justify-center h-[100%]">
+                    <h1 className="bg-slate-100 h-[10%] text-2xl font-bold"> OUR TOP EVENTS</h1>
+                    <div className=" flex h-[30%]">
+                        {/* top stories left and right divs */}
+                        <div className="w-[60%] flex flex-col justify-center gap-3 px-[15px] h-[100%]">
+                            <a className="hover:text-sky-700" href="#">
+                                <h2 className="text-xl font-bold">
+                                SINI2024<br/>
+                                Virtual Event
+                                </h2>
+                            </a>
+                            <div className="flex gap-2">
+                                <p>7th{" "}July,2024</p>
+                            </div>
+                        </div>
+                        {/* image-right-side-top-stories-container */}
+                        <div className="w-[40%] h-[100%]">
+                            <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://ehr.meditech.com/sites/default/files/images/events/2024Sini_Article.jpg" alt="" />
+                        </div>
                     </div>
-                    <div className="w-[100%] h-[160px] flex flex-col gap-5 items-center justify-center">
-                        <h1 className='font-semibold text-2xl'>Program title</h1>
-                        <p>A brief description</p>
-                        <button className='px-[35px] rounded-md hover:text-white hover:bg-blue-500 bg-blue-400 py-[15px]'>Watch here</button>
+                    <div className=" flex h-[30%]">
+                        <div className="w-[60%] h-[100%] flex flex-col justify-center gap-3 px-[15px]">
+                            <a className="hover:text-sky-700" href="#">
+                                <h2 className="text-xl font-bold">
+                                MUN Annual Conference 2024<br/>
+                                Liverpool, GBR
+                                </h2>
+                            </a>
+                            <div className="flex gap-2">
+                                <p>7th{" "}July,2024</p>
+                            </div>
+                        </div>
+                        <div className="w-[40%] h-[100%]">
+                            <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://ehr.meditech.com/sites/default/files/images/events/2024MUNsavethedate_Article-1.jpg" alt="" />
+                        </div>
                     </div>
-                </div>
-                <div className=" w-[470px] rounded-[8px]">
-                    <div className="h-[530px]">
-                        <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src={program6} alt="" />
-                    </div>
-                    <div className="w-[100%] h-[160px] flex flex-col gap-5 items-center justify-center">
-                        <h1 className='font-semibold text-2xl'>Program title</h1>
-                        <p>A brief description</p>
-                        <button className='px-[35px] rounded-md hover:text-white hover:bg-blue-500 bg-blue-400 py-[15px]'>Watch here</button>
+                    <div className=" flex h-[30%]">
+                        <div className="w-[60%] h-[100%] flex flex-col justify-center gap-3 px-[15px]">
+                            <a className="hover:text-sky-700" href="#">
+                                <h2 className="text-xl font-bold">
+                                
+                                MEDITECH Arkansas Roadshow<br/>
+                                Little Rock, AR
+                                </h2>
+                            </a>
+                            <div className="flex gap-2">
+                                <p>7th{" "}July,2024</p>
+                            </div>
+                        </div>
+                        <div className="w-[40%] h-[100%]">
+                            <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://ehr.meditech.com/sites/default/files/images/events/2024AKroadshow_Article.jpg" alt="" />
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+    </section>
     )
 }
 

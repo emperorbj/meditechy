@@ -1,16 +1,23 @@
-import Telemedicine from '../assets/consultation.png'
-import Information from '../assets/guidlines.png'
-import Community from '../assets/community.png'
+// import Telemedicine from '../assets/consultation.png'
+// import Information from '../assets/guidlines.png'
+// import Community from '../assets/community.png'
+import Lottie from "lottie-react"
+import drug from "../Drug.json"
+import race from "../Races.json"
+import healthInfo from "../DoctorsContactTwo.json"
 
-import AOS from 'aos'
-import 'aos/dist/aos.css'
-import { useEffect } from 'react';
+const style = {
+    height: 100,
+    width: 100
+}
+
+const styleTwo = {
+    height: 150,
+    width: 150
+}
 
 const Services = () => {
 
-    useEffect(() => {
-        AOS.init();
-    },[])
 
     return (
         <section className='flex flex-col font-myFont bg-slate-50'>
@@ -24,18 +31,17 @@ const Services = () => {
                 
                 <div
                     className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl  rounded-xl shadow-md'>
-                        <div className='flex items-center justify-center gap-[10px]'>
-                            <div className='h-[70px] w-[70px] mt-[30px]' >
-                                <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Telemedicine} alt="" />
+                        <div className='flex items-center justify-center gap-[20px]'>
+                            <div className='h-[70px] w-[70px] mt-[10px]' >
+                                {/* <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Telemedicine} alt="" /> */}
+                                <Lottie loop={true} style={style} animationData={drug}/>
                             </div>
                             <h1 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400 mt-[20px]'>TELEMEDICINE</h1>
                         </div>
-                    <div>
+                    <div className='mt-[50px]'>
                         <p className='px-[20px] text-center text-slate-800 text-xl mt-[20px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Corrupti labore voluptatem voluptatum adipisci tenetur
-                            placeat veniam iusto ducimus repellat blanditiis eveniet, 
-                            mollitia error voluptatibus aspernatur delectus ea qui nihil 
-                            praesentium?</p>
+                            placeat veniam iusto ducimus repellat blanditiis </p>
                     </div>
                 </div>
                 
@@ -43,19 +49,19 @@ const Services = () => {
                 
                 <div
                     className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl rounded-xl shadow-md'>
-                        <div className='flex items-center justify-center gap-[10px]'>
+                        <div className='flex items-center justify-center gap-[60px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
-                                <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Information} alt="" />
+                                {/* <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Information} alt="" /> */}
+                                <Lottie loop={true} style={styleTwo} animationData={healthInfo}/>
                             </div>
                             <h1 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400 mt-[20px]'>HEALTH INFORMATION</h1>
                         </div>
                     <div>
                     
-                        <p className='px-[20px] text-center mt-[20px] text-xl text-slate-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <p className='px-[20px] text-center mt-[55px] text-xl text-slate-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Corrupti labore voluptatem voluptatum adipisci tenetur
                             placeat veniam iusto ducimus repellat blanditiis eveniet, 
-                            mollitia error voluptatibus aspernatur delectus ea qui nihil 
-                            praesentium?</p>
+                            mollitia error voluptatibus aspernatur</p>
                     </div>
                 </div>
                 
@@ -63,18 +69,18 @@ const Services = () => {
                 
                 <div
                     className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl rounded-xl shadow-md'>
-                        <div className='flex items-center justify-center gap-[10px]'>
-                            <div className='h-[70px] w-[70px] mt-[30px]' >
-                                <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Community} alt="" />
+                        <div className='flex items-center justify-center gap-[60px]'>
+                            <div className='h-[70px] w-[70px] mt-[30px] mr-[30px]' >
+                                {/* <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Community} alt="" /> */}
+                                <Lottie loop={true} style={styleTwo} animationData={race}/>
                             </div>
                             <h1 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400 mt-[20px]'>OUR COMMUNITY</h1>
                         </div>
                     <div>
-                        <p className='px-[20px] text-center mt-[20px] text-xl text-slate-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <p className='px-[20px] text-center mt-[60px] text-xl text-slate-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Corrupti labore voluptatem voluptatum adipisci tenetur
                             placeat veniam iusto ducimus repellat blanditiis eveniet, 
-                            mollitia error voluptatibus aspernatur delectus ea qui nihil 
-                            praesentium?</p>
+                            mollitia error voluptatibus aspernatur</p>
                     </div>
                 </div>
                 

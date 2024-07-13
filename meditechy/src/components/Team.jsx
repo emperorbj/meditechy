@@ -60,7 +60,7 @@ const Team = () => {
                     {team.map((person) => (
                         <li key={person.id}>
                             <div className="flex items-center gap-x-6">
-                                <img className="h-20 w-20 rounded-full object-cover " src={person.image} alt="" />
+                                <img loading="lazy" className="h-20 w-20 rounded-full object-cover " src={person.image} alt="" />
                                 <div>
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                     <p className="text-sm font-semibold leading-6 text-blue-500">{person.role}</p>

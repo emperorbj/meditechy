@@ -6,6 +6,8 @@ import About from './pages/About';
 import Contacts from './pages/Contacts';
 import Events from './pages/Events';
 import RecentEvent from './components/RecentEvent';
+import Blogs from './pages/Blogs';
+import Community from './pages/Community';
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path='/contact' element={<Contacts/>}/>
           <Route path='/events' element={<Events/>}/>
           <Route path='/recent-event' element={<RecentEvent/>}/>
+          <Route path='/blogs' element={<Blogs/>}/>
+          <Route path='/community' element={<Community/>}/>
         </Routes>
     </BrowserRouter>
     </div>
