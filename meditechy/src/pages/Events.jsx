@@ -6,16 +6,27 @@ import speaker3 from "../assets/nprofile3.webp"
 import PastEvents from "../components/PastEvents"
 import { NavLink } from "react-router-dom"
 import Footer from "../components/Footer"
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import { useEffect, useState } from "react"
 
 
 const Events = () => {
+
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 5000);
+    },[])
+
     return (
         <>
             <Navbar />
             <div className="px-[30px] font-myFont">
                 <div className='h-[700px] relative w-full rounded-lg'>
                     <div className='rounded-lg w-full absolute top-0 left-0 h-full'>
+                    
                         <img className="rounded-lg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={conference} />
+                    
                         <div className='rounded-lg absolute top-0 left-0 h-full w-full bg-black opacity-50'></div>
 
                     </div>
@@ -36,7 +47,9 @@ const Events = () => {
                 <div className=" mt-0 h-[200px] flex items-center justify-center gap-10">
                     <div className=" flex flex-col justify-center items-center ">
                         <div className=" w-24 h-24 rounded-full border">
+                        {loading ? <Skeleton style={{width:"100%", height:"100%", borderRadius:"50%", objectFit:"cover"}}/>:
                             <img className="h-[100%] rounded-full w-[100%] object-cover" src={speaker1} alt="" />
+                        }
                         </div>
                         <div>
                             <h1>Augustine Adebayo</h1>
@@ -45,8 +58,10 @@ const Events = () => {
                     </div>
                     <div className=" flex flex-col justify-center items-center">
                         <div className="w-24 h-24 rounded-full border">
+                        {loading ? <Skeleton style={{width:"100%", height:"100%", borderRadius:"50%", objectFit:"cover"}}/>:
                             <img className="h-[100%] rounded-full w-[100%] object-cover" src={speaker2} alt="" />
-                        </div>
+                        }
+                            </div>
                         <div>
                             <h1>Jasmine Adebayo</h1>
                             <h2 className="font-semibold ml-[15px]">CEO InnovAI</h2>
@@ -54,7 +69,9 @@ const Events = () => {
                     </div>
                     <div className="flex flex-col justify-center items-center">
                         <div className="w-24 h-24 rounded-full border">
+                        {loading ? <Skeleton style={{width:"100%", height:"100%", borderRadius:"50%", objectFit:"cover"}}/>:
                             <img className="h-[100%] rounded-full w-[100%] object-cover" src={speaker3} alt="" />
+                        }
                         </div>
                         <div>
                             <h1>James Adebayo</h1>

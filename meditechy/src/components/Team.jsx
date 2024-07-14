@@ -1,4 +1,7 @@
-
+import { useEffect } from 'react';
+import { useState } from 'react';
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
 
 const team = [
     {
@@ -46,6 +49,12 @@ const team = [
 ]
 
 const Team = () => {
+
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 3000);
+    },[])
+
     return (
         <div className="bg-white py-24 sm:py-32 mx-[60px] mt-[20px] rounded-[10px]">
             <div className="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
@@ -60,11 +69,17 @@ const Team = () => {
                     {team.map((person) => (
                         <li key={person.id}>
                             <div className="flex items-center gap-x-6">
-                                <img loading="lazy" className="h-20 w-20 rounded-full object-cover " src={person.image} alt="" />
-                                <div>
+                                {loading ? <Skeleton style={{width: "80px", height: "80px", borderRadius:"50%"}}/>
+
+                                    :<img loading="lazy" className="h-20 w-20 rounded-full object-cover " src={person.image} alt="" />
+                                }
+                                {loading ? <Skeleton style={{width:"100px", height:"20px"}}/>:
+                                (<div>
+                                    
                                     <h3 className="text-base font-semibold leading-7 tracking-tight text-gray-900">{person.name}</h3>
                                     <p className="text-sm font-semibold leading-6 text-blue-500">{person.role}</p>
                                 </div>
+                                )}
                             </div>
                         </li>
                     ))}

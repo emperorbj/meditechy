@@ -4,20 +4,31 @@ import Lottie from "lottie-react"
 import CommunityOne from "../Robotics Students.json"
 import CommunityTwo from "../Hospital Reception.json"
 import CommunityThree from "../Creating Application.json"
+import Footer from "../components/Footer";
+import Skeleton from 'react-loading-skeleton';
+import 'react-loading-skeleton/dist/skeleton.css';
+import { useEffect, useState } from "react"
 
 
 const Community = () => {
+
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+        setTimeout(() => setLoading(false), 5000);
+    },[])
+
     return (
         <div>
             <Navbar/>
             {/* header-community */}
             <div className="mt-[85px] flex  gap-5 px-[10] font-myWorkSans py-[10px] rounded-[10px] h-[550px] bg-slate-200 mx-[40px]">
                 <div className="ml-[20px] w-[50%] ">
+                {loading ? <Skeleton style={{width:"100%", height:"100%", objectFit:"cover"}}/>:
                     <ReactPlayer style={{objectFit:"cover", 
                         width:"100%", height: "100%", 
                         marginTop: "50px", 
                         }}  url="https://www.youtube.com/watch?v=_GaaRDtvfa0" loop ={true} controls={true} />
-
+                    }
                 </div>
                 <div className=" w-[50%] flex flex-col gap-5 px-[30px] items-center justify-center">
                     <h1 className="text-3xl text-green-400 font-semibold">A Dedicated Community</h1>
@@ -95,7 +106,9 @@ const Community = () => {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
+        
     )
 }
 
