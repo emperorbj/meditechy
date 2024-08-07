@@ -21,13 +21,7 @@ const Footer = () => {
             <div className="mb-8 md:mb-0">
                 <h2 className="text-2xl font-bold">Follow Us</h2>
                 <ul className="mt-2 flex space-x-4">
-                <li>
-                    <a href="#" className="hover:underline">
-                    <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 2.163c-5.524 0-10 4.477-10 10 0 4.991 3.656 9.12 8.437 9.878v-6.987h-2.54v-2.891h2.54v-2.151c0-2.512 1.493-3.89 3.776-3.89 1.096 0 2.238.195 2.238.195v2.463h-1.26c-1.243 0-1.63.773-1.63 1.562v1.821h2.773l-.443 2.891h-2.33v6.987c4.781-.757 8.437-4.886 8.437-9.878 0-5.523-4.476-10-10-10z" />
-                    </svg>
-                    </a>
-                </li>
+
                 <li>
                     <a href="#" className="hover:underline">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">

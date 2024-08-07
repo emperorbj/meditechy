@@ -5,8 +5,9 @@ const Choose = () => {
         <div>
             <h1 className='text-3xl mt-[80px] font-bold text-center 
             text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400'> WHY MEDITECHY AFRICA ?</h1>
-            <div className="grid grid-cols-2 gap-4 px-[80px] mt-[20px]">
-                <div className='flex flex-col   rounded-xl bg-blue-400 hover:shadow-blue-500  shadow-md px-[30px] py-[20px]'>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 px-[80px] mt-[20px]">
+                <div className='flex flex-col rounded-xl bg-blue-400 hover:shadow-blue-500  
+                shadow-md px-[30px] py-[20px]'>
                     <h1 className='text-xl text-center text-white font-bold'>Pioneering Spirit</h1>
                     <div>
                         <p className='px-[20px] text-center  text-white text-xl mt-[20px]'>We are at the forefront of merging medicine and technology, 
