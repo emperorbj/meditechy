@@ -35,7 +35,11 @@ const Events = () => {
                             <h1 className='text-5xl font-bold'>2024 Clinical informatics symposium</h1>
                             <p className='mt-4 text-xl'>Join us in revolutionizing healthcare</p>
                             <NavLink to="/recent-event">
-                            <button className='text-[20px] font-bold mt-[30px] rounded-[10px] py-[14px] px-[60px] hover:bg-gradient-to-r from-green-500 to-sky-500 bg-sky-500 shadow-sky-500 shadow-sm '>Learn more</button>
+                            <button className='text-[20px] font-bold mt-[30px] 
+                            rounded-[10px] py-[14px] px-[60px] 
+                            hover:bg-gradient-to-r from-green-500 
+                            to-sky-500 bg-sky-500 
+                            shadow-sky-500 shadow-sm '>Learn more</button>
                             </NavLink>
                         </div>
                     </div>

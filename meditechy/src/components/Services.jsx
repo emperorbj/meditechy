@@ -20,17 +20,20 @@ const Services = () => {
 
 
     return (
-        <section className='flex flex-col font-myFont bg-slate-50'>
+        <section className='flex flex-col font-myFont h-[1400px] md:h-[1200px] lg:h-[760px] bg-slate-50'>
             {/* text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-200 */}
-            <h1 className='text-4xl font-bold text-center mt-[200px] mb-[50px] 
+            <h1 className='text-xl md:text-3xl lg:text-4xl font-bold text-center md:mt-[140px] 
+            lg:mt-[170px] mb-[50px] 
             text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400'> OUR CORE MISSION AND VISION</h1>
             {/* card container */}
             
-            <div className='flex gap-10 px-[30px] h-[500px]'>
+            <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:space-x-3 lg:space-x-5 
+            px-[30px] h-[1200px] md:h-[1000px] lg:h-[500px]'>
                 {/* Each card design ONE*/}
                 
                 <div
-                    className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl  rounded-xl shadow-md'>
+                    className='hover:bg-sky-100 flex flex-col h-[370px] md:h-[410px] lg:h-[460px] 
+                    bg-white/20 backdrop-blur-xl  rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[20px]'>
                             <div className='h-[70px] w-[70px] mt-[10px]' >
                                 {/* <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Telemedicine} alt="" /> */}
@@ -39,7 +42,7 @@ const Services = () => {
                             <h1 className='text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-sky-400 mt-[20px]'>TELEMEDICINE</h1>
                         </div>
                     <div className='mt-[50px]'>
-                        <p className='px-[20px] text-center text-slate-800 text-xl mt-[20px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        <p className=' px-[20px] text-center text-slate-800 text-xl mt-[20px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Corrupti labore voluptatem voluptatum adipisci tenetur
                             placeat veniam iusto ducimus repellat blanditiis </p>
                     </div>
@@ -48,7 +51,7 @@ const Services = () => {
                 {/* Each card design TWO*/}
                 
                 <div
-                    className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl rounded-xl shadow-md'>
+                    className='hover:bg-sky-100 flex flex-col h-[370px] md:h-[410px] lg:h-[460px] bg-white/20 backdrop-blur-xl rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[60px]'>
                             <div className='h-[70px] w-[70px] mt-[30px]' >
                                 {/* <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Information} alt="" /> */}
@@ -68,7 +71,7 @@ const Services = () => {
                 {/* Each card design THREE*/}
                 
                 <div
-                    className='flex flex-col h-[460px] bg-white/20 backdrop-blur-xl rounded-xl shadow-md'>
+                    className=' hover:bg-sky-100 flex flex-col h-[370px] md:h-[410px] lg:h-[460px] bg-white/20 backdrop-blur-xl rounded-xl shadow-md'>
                         <div className='flex items-center justify-center gap-[60px]'>
                             <div className='h-[70px] w-[70px] mt-[30px] mr-[30px]' >
                                 {/* <img className='h-[100%] w-[100%] rounded-xl' style={{objectFit:'cover', objectPosition:'center'}}  src={Community} alt="" /> */}

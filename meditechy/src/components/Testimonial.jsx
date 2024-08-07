@@ -49,7 +49,35 @@ const Testimonial = () => {
         speed: 500,
         slidesToShow: 3,
         slidesToScroll: 1,
+        initialSlide: 0,
         arrows: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        lazyLoad: 'ondemand',
+        pauseOnHover: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    dots: true,
+                }
+            },
+            
+            {
+                breakpoint: 480,
+                settings: {
+                    infinite: true,
+                    speed: 500,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    dots: true,
+                }
+            },
+        ]
     };
 
     return (
@@ -74,12 +102,14 @@ const Testimonial = () => {
         // </div>
 
 
-        <div className="w-3/4 m-auto">
+        <div className="hidden lg:block w-[80%] m-auto">
         <div className="mt-20">
             <Slider {...settings}>
                 {
                     data.map((person) => (
-                        <div key={person.id} className="bg-white h-[450px] shadow-lg rounded-xl text-slate-800">
+                        <div key={person.id} className="bg-white h-[450px] shadow-lg 
+                        rounded-xl 
+                        text-slate-800">
                             {loading ? <Skeleton width={350} style={{height:"100%"}}/> :
                             (<div className="h-56 rounded-t-xl bg-sky-500 flex items-center justify-center">
                                 {loading ? (
