@@ -19,14 +19,17 @@ const Blogs = () => {
             {/* top section */}
             <section className="md:mx-[20px] lg:mx-[45px] bg-slate-50 font-myFont mt-[20px] 
             md:mt-[65px] 
-            h-[2000px] md:h-[1100px] 
+            h-[2500px] md:h-[1100px] 
             lg:h-[720px]">
                 <div className="h-[5%] md:h-[5%] lg:h-[15%] pt-[20px]">
                     <h1 className="font-playWrite text-2xl font-bold text-center"> Our Blogs</h1>
                 </div>
-                <div className="bg-yellow-400 md:flex-col lg:flex lg:flex-row h-[95%] md:h-[90%] lg:h-[85%]">
+                <div className=" md:flex-col lg:flex lg:flex-row h-[95%] 
+                md:h-[90%] 
+                lg:h-[85%]">
                     {/* big top story right side */}
-                    <div className="bg-purple-400 h-[40%] md:h-[60%] lg:h-[100%] md:w-full lg:w-[50%] pr-5">
+                    <div className=" h-[26%] md:h-[60%] lg:h-[100%] 
+                    md:w-full lg:w-[50%] pr-5">
                         {/* image container */}
                         <div className="h-[50%] md:h-[50%] lg:h-[57%]">
                             {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
@@ -64,23 +67,24 @@ const Blogs = () => {
                         </div>
                     </div>
                     {/* top stories container */}
-                    <div className="bg-green-400 md:w-full lg:w-[50%] flex flex-col px-[15px] 
+                    <div className=" w-full md:w-full lg:w-[50%] flex flex-col px-[15px] 
                     gap-3 md:gap-7 
                     lg:gap-2 
-                    py-[4px]  
-                    justify-center h-[60%] md:h-[40%] lg:h-[100%]">
-                        <h1 className="bg-slate-50 md:h-[4%] lg:h-[10%] text-2xl 
+                    md:py-[4px]  
+                    justify-center h-[74%] md:h-[40%] lg:h-[100%]">
+                        <h1 className="bg-slate-50 h-4% md:h-[4%] mt-4 sm:mt-4 lg:h-[10%] text-2xl 
                         md:mb-[30px] 
                         font-bold"> OUR TOP STORIES</h1>
-                        <div className="flex-col md:flex md:flex-row md:h-[32%] lg:h-[30%]">
+                        <div className="flex-col md:flex md:flex-row h-[32%] md:h-[32%] lg:h-[30%]">
                             {/* top stories left and right divs */}
                             <div className="w-full md:w-[50%] lg:w-[65%] flex flex-col 
                             justify-center 
                             gap-3 px-[15px] 
-                            h-[50%] md:h-[100%]">
+                            h-[40%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "390px", height: "59px" }} /> :
                                     <a className="hover:text-sky-700" href="https://blog.meditech.com/southern-ohio-medical-center-battles-the-opioid-crisis-and-drives-change-in-their-community">
-                                        <h2 className="text-xl text-green-600 hover:text-green-400 font-bold">
+                                        <h2 className="text-xl text-green-600 
+                                        hover:text-green-400 font-bold">
                                             Southern Ohio Medical Center battles the opioid crisis and drives change in their community
                                         </h2>
                                     </a>
@@ -93,14 +97,17 @@ const Blogs = () => {
                                 }
                             </div>
                             {/* image-right-side-top-stories-container */}
-                            <div className="w-full md:w-[50%] lg:w-[35%] h-[50%] md:h-[100%]">
+                            <div className="w-full md:w-[50%] lg:w-[35%] h-[60%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "8px" }} /> :
                                     <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://blog.meditech.com/hubfs/dr-porter-blog-1.jpg" alt="" />
                                 }
                             </div>
                         </div>
-                        <div className="flex-col md:flex md:flex-row md:h-[32%] lg:h-[30%]">
-                            <div className="md:w-[50%] lg:w-[65%] h-[100%] flex flex-col justify-center gap-3 px-[15px]">
+                        <div className="flex-col md:flex md:flex-row h-[32%] md:h-[32%] lg:h-[30%]">
+                            <div className="w-full md:w-[50%] lg:w-[65%] flex flex-col 
+                            justify-center 
+                            gap-3 px-[15px] 
+                            h-[40%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "390px", height: "59px" }} /> :
                                     <a className="hover:text-sky-700" href="https://blog.meditech.com/spotting-medical-provider-burnout-a-call-to-action">
                                         <h2 className="text-xl text-green-600 hover:text-green-400 font-bold">
@@ -114,15 +121,17 @@ const Blogs = () => {
                                     </div>
                                 }
                             </div>
-                            <div className="md:w-[50%] lg:w-[35%] h-[100%]">
+                            <div className="w-full md:w-[50%] lg:w-[35%] h-[60%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://blog.meditech.com/hubfs/Blog_PhysBurnout.jpeg" alt="" />
                                 }
                             </div>
                         </div>
-                        <div className="flex-col md:flex md:flex-row md:h-[32%] lg:h-[30%]">
-                            <div className="md:w-[50%] lg:w-[65%] h-[100%] flex flex-col 
-                            justify-center gap-3 px-[15px]">
+                        <div className="flex-col md:flex md:flex-row h-[32%] md:h-[32%] lg:h-[30%]">
+                            <div className="w-full md:w-[50%] lg:w-[65%] flex flex-col 
+                            justify-center 
+                            gap-3 px-[15px] 
+                            h-[40%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "390px", height: "59px" }} /> :
                                     <a className="hover:text-sky-700" href="https://blog.meditech.com/using-innovative-technology-to-drive-quality-improvement-efforts">
                                         <h2 className="text-xl text-green-600 hover:text-green-400 font-bold">
@@ -138,7 +147,7 @@ const Blogs = () => {
                                     </div>
                                 }
                             </div>
-                            <div className="md:w-[50%] lg:w-[35%] h-[100%]">
+                            <div className="w-full md:w-[50%] lg:w-[35%] h-[60%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://blog.meditech.com/hubfs/blog--successes-2024--hubspot-page.jpg" alt="" />
                                 }
@@ -152,8 +161,10 @@ const Blogs = () => {
             <section>
                 <div className=" font-myFont">
                     <h1 className='text-center font-playWrite text-3xl font-bold mt-40'>HERE ARE OUR PAST BLOGS</h1>
-                    <div className="grid grid-cols-3 gap-10 p-10">
-                        <div className="bg-white border-[2px] shadow-md border-slate-100 hover:bg-slate-100 flex flex-col gap-3 w-[470px] rounded-[8px]">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 
+                    lg:gap-10 p-4 md:p-5 lg:p-10">
+                        <div className="bg-white border-[2px] shadow-md border-slate-100 
+                        hover:bg-slate-100 flex flex-col gap-3 md:w-[350px] lg:w-[470px] rounded-[8px]">
                             <div className="h-[300px] rounded-t-[8px]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src="https://blog.meditech.com/hubfs/MKT-18709_Blog_AmberwellBCA.jpg" alt="" />
@@ -176,7 +187,8 @@ const Blogs = () => {
                                 }
                             </div>
                         </div>
-                        <div className=" w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100 rounded-t-[8px] rounded-[8px] flex flex-col gap-3">
+                        <div className="md:w-[350px] lg:w-[470px] border-[2px] shadow-md border-slate-100 
+                        hover:bg-slate-100 rounded-t-[8px] rounded-[8px] flex flex-col gap-3">
                             <div className="h-[300px]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src="https://blog.meditech.com/hubfs/darrell-bodnar-NCH--hubspot-page-1.jpg" alt="" />
@@ -197,7 +209,7 @@ const Blogs = () => {
                                 }
                             </div>
                         </div>
-                        <div className=" w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100 rounded-[8px] flex flex-col gap-3">
+                        <div className="md:w-[350px] lg:w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100 rounded-[8px] flex flex-col gap-3">
                             <div className="h-[300px]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src="https://blog.meditech.com/hubfs/MKT-18142_Blog_SurveillanceCollaborative-1.jpg" alt="" />
@@ -220,7 +232,7 @@ const Blogs = () => {
                                 }
                             </div>
                         </div>
-                        <div className=" w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100 rounded-[8px] flex flex-col gap-3">
+                        <div className="md:w-[350px] lg:w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100 rounded-[8px] flex flex-col gap-3">
                             <div className="h-[300px]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src="https://blog.meditech.com/hubfs/SI-conference--people--2024--main-image%20%281%29.jpg" alt="" />
@@ -244,7 +256,7 @@ const Blogs = () => {
                                 }
                             </div>
                         </div>
-                        <div className=" w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100  rounded-[8px] flex flex-col gap-3">
+                        <div className="md:w-[350px] lg:w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100  rounded-[8px] flex flex-col gap-3">
                             <div className="h-[300px]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src="https://blog.meditech.com/hubfs/MUSE-2024--recap--hubspot-page-1.jpg" alt="" />
@@ -265,7 +277,7 @@ const Blogs = () => {
                                 }
                             </div>
                         </div>
-                        <div className=" w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100 rounded-[8px] flex flex-col gap-3">
+                        <div className="md:w-[350px] lg:w-[470px] border-[2px] shadow-md border-slate-100 hover:bg-slate-100 rounded-[8px] flex flex-col gap-3">
                             <div className="h-[300px]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className='h-[100%] rounded-[8px] w-[100%] object-cover' src="https://blog.meditech.com/hubfs/phelps-blog--hubspot-page%20%281%29.jpg" alt="" />
