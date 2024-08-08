@@ -32,7 +32,7 @@ const About = () => {
         <div className="bg-slate-50 font-myFont relative w-full">
             <Navbar/>
             {/* about us container */}
-            <div className="font-myWorkSans bg-red-500 md:flex-col lg:flex lg:flex-row 
+            <div className="font-myWorkSans md:flex-col lg:flex lg:flex-row 
             justify-between md:mx-[2px] lg:mx-[70px]
             mt-[20px] 
             md:mt-[80px] h-[1150px] md:h-[1300px] lg:h-[750px]">
@@ -99,7 +99,7 @@ const About = () => {
                 </div>
             </div>
             {/* first  */}
-            <div className='font-myWorkSans bg-purple-500 md:flex md:flex-row  lg:h-[800px] 
+            <div className='font-myWorkSans md:flex md:flex-row  lg:h-[800px] 
             md:h-[510px] mx-1 md:mx-[10px] 
             mt-[80px]'>
                 <div className="md:w-[50%] w-full h-[50%] md:h-[100%] rounded-[10px] shadow-lg">
@@ -122,7 +122,7 @@ const About = () => {
             </div>
             {/* second */}
             <div className='font-myWorkSans 
-            bg-purple-500 md:flex md:flex-row-reverse lg:h-[800px] 
+            md:flex md:flex-row-reverse lg:h-[800px] 
             md:h-[510px] mx-1 md:mx-[10px] 
             mt-[80px]'>
                 <div className="md:w-[50%] w-full h-[50%] md:h-[100%] rounded-[10px] shadow-lg">
@@ -144,7 +144,7 @@ const About = () => {
             </div>
             {/* third */} 
             <div className=' font-myWorkSans 
-            bg-purple-500 md:flex md:flex-row lg:h-[800px] 
+            md:flex md:flex-row lg:h-[800px] 
             md:h-[510px] mx-1 md:mx-[10px] 
             mt-[80px] '>
                 <div className="md:w-[50%] w-full h-[50%] md:h-[100%] rounded-[10px] shadow-lg">

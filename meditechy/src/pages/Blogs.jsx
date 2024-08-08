@@ -17,21 +17,25 @@ const Blogs = () => {
         <>
             <Navbar />
             {/* top section */}
-            <section className="mx-[45px] bg-slate-50 font-myFont mt-[65px]  h-[720px]">
-                <div className=" h-[15%] pt-[20px]">
+            <section className="md:mx-[20px] lg:mx-[45px] bg-slate-50 font-myFont mt-[20px] 
+            md:mt-[65px] 
+            h-[2000px] md:h-[1100px] 
+            lg:h-[720px]">
+                <div className="h-[5%] md:h-[5%] lg:h-[15%] pt-[20px]">
                     <h1 className="font-playWrite text-2xl font-bold text-center"> Our Blogs</h1>
                 </div>
-                <div className=" flex h-[85%]">
+                <div className="bg-yellow-400 md:flex-col lg:flex lg:flex-row h-[95%] md:h-[90%] lg:h-[85%]">
                     {/* big top story right side */}
-                    <div className=" h-[100%] w-[50%] pr-5">
+                    <div className="bg-purple-400 h-[40%] md:h-[60%] lg:h-[100%] md:w-full lg:w-[50%] pr-5">
                         {/* image container */}
-                        <div className="h-[57%]">
+                        <div className="h-[50%] md:h-[50%] lg:h-[57%]">
                             {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                 <img className="h-[100%] rounded-[4px] w-[100%] object-cover" src="https://blog.meditech.com/hubfs/sway-health-award--2024--hubspot-page.jpg" alt="" />
                             }
                         </div>
                         {/* description container */}
-                        <div className="h-[43%] pl-[10px] flex flex-col gap-3">
+                        <div className="h-[50%] md:h-[50%] lg:h-[43%] pl-[10px] flex 
+                        flex-col md:gap-1 lg:gap-3">
                             {loading ? <Skeleton style={{ width: "400px", height: "34px", marginTop: "20px" }} /> :
                                 <h1 className="text-center mt-5 text-green-600 hover:text-green-400 font-bold text-2xl">
                                     Celebrating a community of innovators at Swaay.Health Live 2024
@@ -60,11 +64,20 @@ const Blogs = () => {
                         </div>
                     </div>
                     {/* top stories container */}
-                    <div className="w-[50%] flex flex-col px-[15px] gap-2 py-[4px]  justify-center h-[100%]">
-                        <h1 className="bg-slate-50 h-[10%] text-2xl font-bold"> OUR TOP STORIES</h1>
-                        <div className=" flex h-[30%]">
+                    <div className="bg-green-400 md:w-full lg:w-[50%] flex flex-col px-[15px] 
+                    gap-3 md:gap-7 
+                    lg:gap-2 
+                    py-[4px]  
+                    justify-center h-[60%] md:h-[40%] lg:h-[100%]">
+                        <h1 className="bg-slate-50 md:h-[4%] lg:h-[10%] text-2xl 
+                        md:mb-[30px] 
+                        font-bold"> OUR TOP STORIES</h1>
+                        <div className="flex-col md:flex md:flex-row md:h-[32%] lg:h-[30%]">
                             {/* top stories left and right divs */}
-                            <div className="w-[65%] flex flex-col justify-center gap-3 px-[15px] h-[100%]">
+                            <div className="w-full md:w-[50%] lg:w-[65%] flex flex-col 
+                            justify-center 
+                            gap-3 px-[15px] 
+                            h-[50%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "390px", height: "59px" }} /> :
                                     <a className="hover:text-sky-700" href="https://blog.meditech.com/southern-ohio-medical-center-battles-the-opioid-crisis-and-drives-change-in-their-community">
                                         <h2 className="text-xl text-green-600 hover:text-green-400 font-bold">
@@ -80,14 +93,14 @@ const Blogs = () => {
                                 }
                             </div>
                             {/* image-right-side-top-stories-container */}
-                            <div className="w-[35%] h-[100%]">
+                            <div className="w-full md:w-[50%] lg:w-[35%] h-[50%] md:h-[100%]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "8px" }} /> :
                                     <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://blog.meditech.com/hubfs/dr-porter-blog-1.jpg" alt="" />
                                 }
                             </div>
                         </div>
-                        <div className=" flex h-[30%]">
-                            <div className="w-[65%] h-[100%] flex flex-col justify-center gap-3 px-[15px]">
+                        <div className="flex-col md:flex md:flex-row md:h-[32%] lg:h-[30%]">
+                            <div className="md:w-[50%] lg:w-[65%] h-[100%] flex flex-col justify-center gap-3 px-[15px]">
                                 {loading ? <Skeleton style={{ width: "390px", height: "59px" }} /> :
                                     <a className="hover:text-sky-700" href="https://blog.meditech.com/spotting-medical-provider-burnout-a-call-to-action">
                                         <h2 className="text-xl text-green-600 hover:text-green-400 font-bold">
@@ -101,14 +114,15 @@ const Blogs = () => {
                                     </div>
                                 }
                             </div>
-                            <div className="w-[35%] h-[100%]">
+                            <div className="md:w-[50%] lg:w-[35%] h-[100%]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://blog.meditech.com/hubfs/Blog_PhysBurnout.jpeg" alt="" />
                                 }
                             </div>
                         </div>
-                        <div className=" flex h-[30%]">
-                            <div className="w-[65%] h-[100%] flex flex-col justify-center gap-3 px-[15px]">
+                        <div className="flex-col md:flex md:flex-row md:h-[32%] lg:h-[30%]">
+                            <div className="md:w-[50%] lg:w-[65%] h-[100%] flex flex-col 
+                            justify-center gap-3 px-[15px]">
                                 {loading ? <Skeleton style={{ width: "390px", height: "59px" }} /> :
                                     <a className="hover:text-sky-700" href="https://blog.meditech.com/using-innovative-technology-to-drive-quality-improvement-efforts">
                                         <h2 className="text-xl text-green-600 hover:text-green-400 font-bold">
@@ -124,7 +138,7 @@ const Blogs = () => {
                                     </div>
                                 }
                             </div>
-                            <div className="w-[35%] h-[100%]">
+                            <div className="md:w-[50%] lg:w-[35%] h-[100%]">
                                 {loading ? <Skeleton style={{ width: "100%", height: "100%", objectFit: "cover" }} /> :
                                     <img className="h-[100%] rounded-[8px] w-[100%] object-cover" src="https://blog.meditech.com/hubfs/blog--successes-2024--hubspot-page.jpg" alt="" />
                                 }

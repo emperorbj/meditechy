@@ -21,8 +21,8 @@ const Events = () => {
     return (
         <>
             <Navbar />
-            <div className="px-[30px] font-myFont">
-                <div className='h-[700px] relative w-full rounded-lg'>
+            <div className="px-[5px] md:px-[30px] font-myFont">
+                <div className='h-[500px] md:h-[700px] relative w-full rounded-lg'>
                     <div className='rounded-lg w-full absolute top-0 left-0 h-full'>
                     
                         <img className="rounded-lg" style={{ width: '100%', height: '100%', objectFit: 'cover' }} src={conference} />
